@@ -5,6 +5,13 @@ zip: github.com/fifthtry/tutorial/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
 
--- fpm.auto-import: ds
+-- fpm.dependency: fifthtry.github.io/blaka as bfont
 
+-- fpm.auto-import: ds
+-- fpm.auto-import: bfont
 -- fpm.auto-import: fifthtry.github.io/tutorial/assets
+
+
+
+
+
