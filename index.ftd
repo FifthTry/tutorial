@@ -1,32 +1,14 @@
 -- import : fpm
+-- import: fifthtry.github.io/tutorial/custom-type as font
 
--- ftd.font-size heading-large-size:
-line-height: 48
-size: 40
-
--- ftd.type heading-large: Poppins
-desktop: $heading-large-size
-mobile: $heading-large-size
-xl: $heading-large-size
-weight: 400
-
--- ftd.font-size Nunito-size:
-line-height: 24
-size: 16
-
--- ftd.type body-large: Nunito
-desktop: $Nunito-size
-mobile: $Nunito-size
-xl: $Nunito-size
-weight: 300
 
 -- ds.page: hello
 
 
 -- ftd.text: text
-role: $heading-large
+role: $font.heading-large
 color: $fpm.color.main.text-strong
 
 -- ftd.text: text
-role: $body-large
+role: $font.body-large
 color: $fpm.color.main.text-strong
