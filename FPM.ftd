@@ -6,3 +6,5 @@ zip: github.com/fifthtry/tutorial/archive/refs/heads/main.zip
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
 
 -- fpm.auto-import: ds
+
+-- fpm.auto-import: fifthtry.github.io/tutorial/assets
