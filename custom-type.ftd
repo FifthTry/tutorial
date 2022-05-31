@@ -1,4 +1,4 @@
--- import : fpm
+-- import: fpm
 
 -- ftd.font-size heading-large-size:
 line-height: 48
@@ -19,14 +19,3 @@ desktop: $Nunito-size
 mobile: $Nunito-size
 xl: $Nunito-size
 weight: 300
-
--- ds.page: hello
-
-
--- ftd.text: text
-role: $heading-large
-color: $fpm.color.main.text-strong
-
--- ftd.text: text
-role: $body-large
-color: $fpm.color.main.text-strong
