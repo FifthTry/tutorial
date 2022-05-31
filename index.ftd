@@ -1,5 +1,47 @@
--- import : fpm
+-- import: fpm
 -- import: fifthtry.github.io/tutorial/custom-type as font
+
+-- ds.page: 
+
+--- heading:
+hero-title: This is heading
+
+--- text:
+simple-text: This is text part example
+
+
+
+
+
+
+
+
+
+-- ftd.column heading:
+optional caption hero-title:
+padding-vertical: $fpm.space.space-6
+
+--- ftd.text: $hero-title
+role: $fpm.type.heading-hero
+color: $fpm.color.main.text-strong
+
+
+
+
+
+
+
+
+
+-- ftd.column text:
+optional string simple-text:
+
+--- ftd.text: $simple-text
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.text
+
+
+
 
 
 -- ftd.row:
@@ -10,7 +52,7 @@ image-src: $assets.files.assets.logo-fifthtry-dark.svg
 alt-image-txt: not found
 align: center
 
--- ds.page: hello
+
 
 
 -- ftd.text: text
