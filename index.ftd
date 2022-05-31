@@ -1,1 +1,152 @@
+-- import : fpm
+-- import: fifthtry.github.io/tutorial/custom-type as font
+
+
+-- ftd.row:
+width: fill
+
+--- image:
+image-src: $assets.files.assets.logo-fifthtry-dark.svg
+alt-image-txt: not found
+align: center
+
 -- ds.page: hello
+
+
+-- ftd.text: text
+role: $font.heading-large
+color: $fpm.color.main.text-strong
+
+-- ftd.text: text
+role: $font.body-large
+color: $fpm.color.main.text-strong
+
+
+
+-- card: Fifthtry
+backgroundcolor: $fpm.color.main.cta-primary.base
+txt-color: $fpm.color.main.text-strong
+src: $assets.files.assets.day-1.png
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+laborum.
+
+
+
+-- card: Fifthtry
+width: percent 70
+backgroundcolor: $fpm.color.main.cta-primary.base
+txt-color: $fpm.color.main.text-strong
+src: $assets.files.assets.day-1.png
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+laborum.
+
+
+
+-- ftd.row image:
+optional caption image-title:
+optional body image-description:
+string alt-image-txt: not_found
+optional string link:
+string align: center
+string width: fill
+optional string height: 
+optional ftd.image-src image-src:
+optional ftd.color active-color:$fpm.color.main.text
+width: $width
+
+--- ftd.column:
+width: fill
+id: title-container
+
+--- ftd.text: $image-title
+if: $image-title is not null
+color: $active-color
+width: fill
+role: $fpm.type.label-big
+padding-vertical: 8
+padding-horizontal: 20
+text-align: center
+
+
+--- container: title-container
+
+--- ftd.row:
+width: fill
+id: image-container
+align: $align
+
+--- ftd.image:
+src: $image-src
+
+
+--- container:image-container
+
+--- ftd.text: 
+if: $image-src is null
+text: $alt-image-txt
+color: $fpm.color.main.text
+
+--- container: ftd.main
+
+--- ftd.text:
+margin-top: 20
+if: $image-description is not null
+text: $image-description
+color: $fpm.color.main.text
+role: $fpm.type.label-big
+text-align: center
+
+
+
+
+-- ftd.row card:
+ftd.image-src src:
+caption title:
+body body: 
+string width: fill
+padding-vertical: $fpm.space.space-4
+padding-horizontal: $fpm.space.space-6
+optional ftd.color backgroundcolor:
+optional ftd.color txt-color: $fpm.color.main.text
+background-color: $backgroundcolor
+spacing: 32
+border-radius: 8
+width: $width
+
+--- ftd.row:
+width: fill
+height: fill
+
+--- ftd.image:
+src: $src
+width: fill
+
+--- container: ftd.main
+
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: $title
+role: $fpm.type.heading-medium
+color: $txt-color
+margin-bottom: $fpm.space.space-4
+width: fill
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-relaxed
+color: $txt-color
+width: fill
+
+
+
+

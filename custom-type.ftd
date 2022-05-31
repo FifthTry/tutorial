@@ -1,0 +1,21 @@
+-- import: fpm
+
+-- ftd.font-size heading-large-size:
+line-height: 48
+size: 40
+
+-- ftd.type heading-large: Poppins
+desktop: $heading-large-size
+mobile: $heading-large-size
+xl: $heading-large-size
+weight: 400
+
+-- ftd.font-size Nunito-size:
+line-height: 24
+size: 16
+
+-- ftd.type body-large: Nunito
+desktop: $Nunito-size
+mobile: $Nunito-size
+xl: $Nunito-size
+weight: 300
