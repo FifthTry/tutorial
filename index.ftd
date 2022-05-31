@@ -7,13 +7,20 @@ background-color: $fpm.color.main.background.base
 padding-vertical: $fpm.space.space-7
 padding-horizontal: $fpm.space.space-7
 spacing: 48
-height: fill
+
+
+
+--- config.heading: This is heading 
+txt-color: $fpm.color.main.text-strong
+
+--- config.text:
+simple-text: This is text part example
 
 
 
 --- config.image:
-width: 376
-image-src: $assets.files.assets.logo-fifthtry-dark.svg
+width: 200
+image-src: $assets.files.assets.day-2.png
 alt-image-txt: not found
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
