@@ -1,0 +1,124 @@
+-- import: fpm
+-- import: fifthtry.github.io/tutorial/custom-type as font
+
+
+
+
+-- ftd.text heading: $hero-title
+caption hero-title:
+string width: fill
+ftd.color txt-color: $fpm.color.main.text
+width: $width
+role: $font.heading-large
+color: $txt-color
+padding-vertical: $fpm.space.space-6
+
+
+
+
+-- ftd.text text:
+optional body simple-text:
+string width: fill
+ftd.color txt-color: $fpm.color.main.text
+width: $width
+text: $simple-text
+role: $fpm.type.copy-relaxed
+color: $txt-color
+padding-vertical: $fpm.space.space-8
+
+
+-- ftd.row image:
+optional caption image-title:
+optional body image-description:
+string alt-image-txt: not_found
+optional string link:
+string align: center
+string width: fill
+optional string height: 
+optional ftd.image-src image-src:
+optional ftd.color active-color:$fpm.color.main.text
+width: $width
+
+--- ftd.column:
+id: title-container
+align: $align
+
+
+--- ftd.text: $image-title
+if: $image-title is not null
+color: $active-color
+width: fill
+role: $fpm.type.label-big
+padding-vertical: 8
+
+
+--- container: title-container
+
+--- ftd.row:
+width: fill
+id: image-container
+
+--- ftd.image:
+src: $image-src
+width: fill
+
+
+--- container:image-container
+
+--- ftd.text: 
+if: $image-src is null
+text: $alt-image-txt
+color: $fpm.color.main.text
+
+--- container: title-container
+
+--- ftd.text:
+margin-top: 20
+if: $image-description is not null
+text: $image-description
+color: $fpm.color.main.text
+role: $fpm.type.label-big
+
+
+
+
+
+-- ftd.row card:
+ftd.image-src src:
+caption title:
+body body: 
+string width: fill
+padding-vertical: $fpm.space.space-4
+padding-horizontal: $fpm.space.space-6
+optional ftd.color backgroundcolor:
+optional ftd.color txt-color: $fpm.color.main.text
+background-color: $backgroundcolor
+spacing: 32
+border-radius: 8
+width: $width
+
+--- ftd.row:
+width: fill
+height: fill
+
+--- ftd.image:
+src: $src
+width: fill
+
+--- container: ftd.main
+
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: $title
+role: $font.heading-large
+color: $txt-color
+margin-bottom: $fpm.space.space-4
+width: fill
+
+--- ftd.text:
+text: $body
+role: $fpm.type.copy-relaxed
+color: $txt-color
+width: fill

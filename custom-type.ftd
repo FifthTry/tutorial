@@ -1,21 +1,24 @@
 -- import: fpm
+-- import: fifthtry.github.io/blaka/assets as bfont
+
+
 
 -- ftd.font-size heading-large-size:
 line-height: 48
 size: 40
 
--- ftd.type heading-large: Poppins
+-- ftd.type heading-large: $bfont.fonts.Blaka
 desktop: $heading-large-size
 mobile: $heading-large-size
 xl: $heading-large-size
 weight: 400
 
--- ftd.font-size Nunito-size:
+-- ftd.font-size nunito-size:
 line-height: 24
 size: 16
 
--- ftd.type body-large: Nunito
-desktop: $Nunito-size
-mobile: $Nunito-size
-xl: $Nunito-size
+-- ftd.type body-large: $bfont.fonts.Blaka
+desktop: $nunito-size
+mobile: $nunito-size
+xl: $nunito-size
 weight: 300
