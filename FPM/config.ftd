@@ -2,9 +2,13 @@
 -- import: fifthtry.github.io/tutorial/custom-type as font
 
 
+
+
 -- ftd.text heading: $hero-title
 caption hero-title:
+string width: fill
 ftd.color txt-color: $fpm.color.main.text
+width: $width
 role: $font.heading-large
 color: $txt-color
 padding-vertical: $fpm.space.space-6
@@ -12,13 +16,16 @@ padding-vertical: $fpm.space.space-6
 
 
 
--- ftd.column text:
-optional string simple-text:
-
-
---- ftd.text: $simple-text
+-- ftd.text text:
+optional body simple-text:
+string width: fill
+ftd.color txt-color: $fpm.color.main.text
+width: $width
+text: $simple-text
 role: $fpm.type.copy-relaxed
-color: $fpm.color.main.text
+color: $txt-color
+padding-vertical: $fpm.space.space-8
+
 
 -- ftd.row image:
 optional caption image-title:

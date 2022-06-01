@@ -14,7 +14,10 @@ spacing: 48
 txt-color: $fpm.color.main.text-strong
 
 --- config.text:
-simple-text: This is text part example
+width: 456
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
 
 
 
